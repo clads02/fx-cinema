@@ -15,10 +15,13 @@ public class Filme {
     }
 
     public void addSessao(Sessao sessao) {
-        if(sessao.getFilme() == null){
+        if(!this.equals(sessao.getFilme())){
             sessao.setFilme(this);
+        }
+        if(!sessoes.contains(sessao)){
             sessoes.add(sessao);
         }
+
     }
 
     public List<Sessao> getSessoes() {

@@ -62,7 +62,15 @@ public class Sessao {
             return s.getFilme().equals(filme) && s.getHorario().equals(horario);
         }
         return false;
+    }
+
+    @Override
+    public String toString() {
+        return "Sessao [horario=" + horario + ", filme=" + filme.getNome() + ", quantidadeIngressosDisponiveis()="
+                + quantidadeIngressosDisponiveis() + "]";
     }    
+
+    
     
 //    private int capacidade;
 //    private int quantidade;
