@@ -6,6 +6,7 @@ import java.time.LocalDate;
 import br.edu.ifba.saj.ads.poo.data.Cinema;
 import br.edu.ifba.saj.ads.poo.model.Cliente;
 import br.edu.ifba.saj.ads.poo.model.Filme;
+import br.edu.ifba.saj.ads.poo.model.Ingresso;
 import br.edu.ifba.saj.ads.poo.model.Sessao;
 import br.edu.ifba.saj.ads.poo.model.TipoIngresso;
 import javafx.event.ActionEvent;
@@ -29,17 +30,6 @@ public class IngressoController {
     private Filme filmeSelecionado;
     private Sessao sessaoSelecionada;
     // private TipoIngresso tipoIngressoSelecionado;
-
-    @FXML
-    public void abrirCadastarFilme(ActionEvent event) {
-        try {
-            App.setRoot("Filme");
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
-    }
 
     @FXML
     private void initialize() {
@@ -75,7 +65,7 @@ public class IngressoController {
             @Override
             public String toString(Sessao sessao) {
                 return sessao == null ? ""
-                        : String.format("Horario filme %1$td/%1$tm/%1$tY %1$tH:%1$tM ", sessao.getHorario());
+                        : String.format("%1$td/%1$tm/%1$tY %1$tH:%1$tM ", sessao.getHorario());
             }
 
             @Override
@@ -87,15 +77,19 @@ public class IngressoController {
 
     @FXML
     void salvar(ActionEvent event) {
-        if (sessaoSelecionada.venderIngresso(new Cliente("Leandro", "01234567891", LocalDate.of(1983, 6, 4)),
-                slTipoIngresso.getSelectionModel().getSelectedItem()) != null) {
+        Ingresso ingresso = sessaoSelecionada.venderIngresso(
+                new Cliente("Leandro", "01234567891", LocalDate.of(1983, 6, 4)),
+                slTipoIngresso.getSelectionModel().getSelectedItem());
+        if (ingresso != null) {
 
-            new Alert(AlertType.INFORMATION,
-                    String.format("Sessoes filme %s  %s", getFilmeSelecionado().getNome(),
-                            getFilmeSelecionado().getSessoes().toString()))
-                    .showAndWait();
-        }else{
-            new Alert(AlertType.ERROR,"Sessão lotada").showAndWait();
+            new Alert(AlertType.INFORMATION, String.format(
+                    "Ingresso %s vendido para o filme %s na sessão de %3$td/%3$tm/%3$tY %3$tH:%3$tM. Ingressos disponíveis %4$d ",
+                    ingresso.getTipoIngresso(),
+                    ingresso.getSessao().getFilme().getNome(),
+                    ingresso.getSessao().getHorario(),
+                    ingresso.getSessao().quantidadeIngressosDisponiveis())).showAndWait();
+        } else {
+            new Alert(AlertType.ERROR, "Sessão lotada").showAndWait();
         }
 
     }

@@ -6,6 +6,7 @@ import java.util.function.UnaryOperator;
 
 import br.edu.ifba.saj.ads.poo.data.Cinema;
 import br.edu.ifba.saj.ads.poo.model.Filme;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -36,18 +37,8 @@ public class FilmeController {
 
         // Aplica o filtro formatador no TextField
         txDuracao.setTextFormatter(new TextFormatter<>(filtroInteiro));
-    }
 
-
-    @FXML
-    void abrirCadastarSessao(ActionEvent event) {
-
-        try {
-            App.setRoot("Sessao");
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+        Platform.runLater(() -> txNome.requestFocus());
     }
 
     @FXML

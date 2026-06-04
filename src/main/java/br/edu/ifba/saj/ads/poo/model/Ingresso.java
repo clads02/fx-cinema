@@ -28,6 +28,22 @@ public class Ingresso {
                 + tipoIngresso + "]";
     }
 
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public Sessao getSessao() {
+        return sessao;
+    }
+
+    public TipoIngresso getTipoIngresso() {
+        return tipoIngresso;
+    }
+
+    public float getValor() {
+        return valor;
+    }
+
     
 
 }

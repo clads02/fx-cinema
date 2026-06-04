@@ -46,28 +46,6 @@ public class SessaoController {
     private Filme filmeSelecionado;
 
     @FXML
-    public void abrirCadastarFilme(ActionEvent event) {
-        try {
-            App.setRoot("Filme");
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
-    }
-
-        @FXML
-    public void abrirVenderIngresso(ActionEvent event) {
-        try {
-            App.setRoot("Ingresso");
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
-    }
-
-    @FXML
     private void initialize() {
         slFilme.getItems().addAll(Cinema.filmes);
         // quando um filme for selecionado na lista, vai guardar esse filme na variaval
@@ -175,10 +153,10 @@ public class SessaoController {
 
         new Alert(AlertType.INFORMATION,
                 String.format("Horario filme %1$td/%1$tm/%1$tY %1$tH:%1$tM ", getHorarioSelecionado())).showAndWait();
-        new Alert(AlertType.INFORMATION, String.format("Nome filme %s ", getFilmeSelecionado().getNome()))
-                .showAndWait();
-        new Alert(AlertType.INFORMATION, String.format("Sessoes filme %s  %s", getFilmeSelecionado().getNome(), getFilmeSelecionado().getSessoes().toString()))
-                .showAndWait();
+        //new Alert(AlertType.INFORMATION, String.format("Nome filme %s ", getFilmeSelecionado().getNome()))
+        //        .showAndWait();
+        //new Alert(AlertType.INFORMATION, String.format("Sessoes filme %s  %s", getFilmeSelecionado().getNome(), getFilmeSelecionado().getSessoes().toString()))
+        //        .showAndWait();
 
     }
 
