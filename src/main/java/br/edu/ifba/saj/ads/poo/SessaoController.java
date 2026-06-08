@@ -97,9 +97,6 @@ public class SessaoController {
             // Exemplo: 125 vira "1.25"
             String novoTextoFormatado = String.format("%.2f", valorLong / 100.0);
 
-            // Força o ponto como separador decimal (ajuste para "," se preferir o padrão
-            // BR)
-            // novoTextoFormatado = novoTextoFormatado.replace(',', '.');
 
             // Define o texto final do componente
             int tamanhoTexto = novoTextoFormatado.length();
