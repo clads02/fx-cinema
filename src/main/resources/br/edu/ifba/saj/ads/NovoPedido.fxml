@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane layoutX="-11.0" layoutY="-1.0" prefHeight="456.0" prefWidth="461.0">
+         <top>
+            <VBox alignment="CENTER" prefHeight="342.0" prefWidth="475.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="43.0" prefWidth="222.0" spacing="10.0">
+                     <children>
+                        <Label text="CARDAPIO" textAlignment="CENTER" textFill="#429615">
+                           <font>
+                              <Font name="System Bold" size="29.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="43.0" prefWidth="222.0" spacing="1.0">
+                     <children>
+                        <Label prefHeight="65.0" prefWidth="149.0" text="X-BURGER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" text="+" />
+                        <TextField alignment="CENTER" prefHeight="26.0" prefWidth="25.0" text="0" />
+                        <Button layoutX="102.0" layoutY="19.0" mnemonicParsing="false" text="-" />
+                        <Separator orientation="VERTICAL" prefHeight="43.0" prefWidth="148.0" />
+                        <Label layoutX="20.0" layoutY="23.0" prefHeight="18.0" prefWidth="40.0" text="16,90">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="53.0" prefHeight="43.0" prefWidth="222.0" spacing="1.0">
+                     <children>
+                        <Label prefHeight="64.0" prefWidth="149.0" text="LASANHA">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" text="+" />
+                        <TextField alignment="CENTER" prefHeight="26.0" prefWidth="25.0" text="0" />
+                        <Button layoutX="102.0" layoutY="19.0" mnemonicParsing="false" text="-" />
+                        <Separator orientation="VERTICAL" prefHeight="195.0" prefWidth="148.0" />
+                        <Label layoutX="20.0" layoutY="23.0" prefHeight="18.0" prefWidth="40.0" text="16,90">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="96.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="43.0" prefWidth="222.0" spacing="1.0">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="149.0" text="PIZZA(MISTA)">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" text="+" />
+                        <TextField alignment="CENTER" prefHeight="26.0" prefWidth="25.0" text="0" />
+                        <Button layoutX="102.0" layoutY="19.0" mnemonicParsing="false" text="-" />
+                        <Separator orientation="VERTICAL" prefHeight="53.0" prefWidth="148.0" />
+                        <Label layoutX="20.0" layoutY="23.0" prefHeight="30.0" prefWidth="36.0" text="16,90">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="140.0" prefHeight="43.0" prefWidth="222.0" spacing="1.0">
+                     <children>
+                        <Label prefHeight="40.0" prefWidth="149.0" text="PASTEL">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" text="+" />
+                        <TextField alignment="CENTER" prefHeight="26.0" prefWidth="25.0" text="0" />
+                        <Button layoutX="102.0" layoutY="19.0" mnemonicParsing="false" text="-" />
+                        <Separator orientation="VERTICAL" prefHeight="44.0" prefWidth="148.0" />
+                        <Label layoutX="20.0" layoutY="23.0" prefHeight="18.0" prefWidth="40.0" text="16,90">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="183.0" prefHeight="43.0" prefWidth="222.0" spacing="1.0">
+                     <children>
+                        <Label prefHeight="26.0" prefWidth="149.0" text="FRITAS">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" text="+" />
+                        <TextField alignment="CENTER" prefHeight="26.0" prefWidth="25.0" text="0" />
+                        <Button layoutX="102.0" layoutY="19.0" mnemonicParsing="false" text="-" />
+                        <Separator orientation="VERTICAL" prefHeight="44.0" prefWidth="148.0" />
+                        <Label layoutX="20.0" layoutY="23.0" prefHeight="18.0" prefWidth="40.0" text="16,90">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="226.0" prefHeight="43.0" prefWidth="222.0" spacing="1.0">
+                     <children>
+                        <Label prefHeight="26.0" prefWidth="149.0" text="REFRIGERANTE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" text="+" />
+                        <TextField alignment="CENTER" prefHeight="26.0" prefWidth="25.0" text="0" />
+                        <Button layoutX="102.0" layoutY="19.0" mnemonicParsing="false" text="-" />
+                        <Separator orientation="VERTICAL" prefHeight="50.0" prefWidth="148.0" />
+                        <Label layoutX="20.0" layoutY="23.0" prefHeight="18.0" prefWidth="39.0" text="16,90">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="269.0" prefHeight="43.0" prefWidth="222.0" spacing="1.0">
+                     <children>
+                        <Label prefHeight="26.0" prefWidth="149.0" text="SUCO LARANJA">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" text="+" />
+                        <TextField alignment="CENTER" prefHeight="26.0" prefWidth="25.0" text="0" />
+                        <Button layoutX="102.0" layoutY="19.0" mnemonicParsing="false" text="-" />
+                        <Separator orientation="VERTICAL" prefHeight="44.0" prefWidth="148.0" />
+                        <Label layoutX="20.0" layoutY="23.0" prefHeight="18.0" prefWidth="40.0" text="16,90">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="309.0" prefHeight="0.0" prefWidth="450.0" spacing="1.0">
+                     <children>
+                        <Separator prefHeight="5.0" prefWidth="450.0" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </top>
+         <bottom>
+            <VBox prefHeight="114.0" prefWidth="438.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="450.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="BOTTOM" prefHeight="30.0" prefWidth="192.0" text="QTD. TOTAL ITENS:" textFill="#f2bc34">
+                           <font>
+                              <Font name="Arial Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="35.0" text="0" textAlignment="JUSTIFY">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="31.0" prefWidth="6.0" />
+                        <Label prefHeight="30.0" prefWidth="173.0" text="Valor total(R$): " textAlignment="CENTER" textFill="#f2bc34">
+                           <font>
+                              <Font name="Arial Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="25.0" text="..." textAlignment="JUSTIFY">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="450.0">
+                     <children>
+                        <Button alignment="CENTER" cancelButton="true" mnemonicParsing="false" prefHeight="46.0" prefWidth="129.0" text="RESETAR" textAlignment="CENTER" textFill="RED">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button alignment="CENTER" cancelButton="true" layoutX="10.0" layoutY="13.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="348.0" text="FINALIZAR PEDIDO R$ ..." textAlignment="CENTER" textFill="#31c929">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
